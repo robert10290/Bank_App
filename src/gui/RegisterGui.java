@@ -3,9 +3,9 @@ package gui;
 import javax.swing.*;
 import java.awt.*;
 
-public class RegisterGui extends BaseFrame{
+public class RegisterGui extends BaseFrame {
 
-    public RegisterGui(){
+    public RegisterGui() {
         super("Banking App Register");
     }
 
