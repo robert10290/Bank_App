@@ -64,8 +64,8 @@ public class RegisterGui extends BaseFrame {
                 String password = String.valueOf(passwordField.getPassword());
                 String rePassword = String.valueOf(rePasswordField.getPassword());
 
-                if (validateUserInput(username, password, rePassword)){
-                    if(MyJDBC.register(username, password)){
+                if (validateUserInput(username, password, rePassword)) {
+                    if (MyJDBC.register(username, password)) {
                         RegisterGui.this.dispose();
                         LoginGui loginGui = new LoginGui();
                         loginGui.setVisible(true);

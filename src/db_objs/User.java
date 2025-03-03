@@ -28,7 +28,7 @@ public class User {
         this.currentBalance = newBalance.setScale(2, RoundingMode.FLOOR);
     }
 
-    public User(int id, String username, String password, BigDecimal currentBalance){
+    public User(int id, String username, String password, BigDecimal currentBalance) {
         this.id = id;
         this.username = username;
         this.password = password;

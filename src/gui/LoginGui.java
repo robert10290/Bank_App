@@ -12,6 +12,7 @@ import java.awt.event.MouseEvent;
 
 public class LoginGui extends BaseFrame {
 
+
     public LoginGui() {
         super("Banking App Login");
     }
@@ -55,9 +56,9 @@ public class LoginGui extends BaseFrame {
                 User user = MyJDBC.validateLogin(username, password);
                 if (user != null) {
                     LoginGui.this.dispose();
-                    BankAppGui bankAppGui = new BankAppGui(user);
-                    bankAppGui.setVisible(true);
-                    JOptionPane.showMessageDialog(bankAppGui, "Login Successfully!");
+                    BankingAppGui bankingAppGui = new BankingAppGui(user);
+                    bankingAppGui.setVisible(true);
+                    JOptionPane.showMessageDialog(bankingAppGui, "Login Successfully!");
                 } else {
                     JOptionPane.showMessageDialog(LoginGui.this, "Login failed...");
                 }
